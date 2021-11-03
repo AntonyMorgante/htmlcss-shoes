@@ -54,14 +54,15 @@
     transform: translate(-50%,-50%);
 }
 
-.item::after{
-    content:"il nostro modello di punta";
+.info{
     text-transform: uppercase;
     text-align: center;
-    font-size: 60px;
+    font-size: 70px;
+    width:800px;
     font-weight: bold;
     position: absolute;
     top:50%;
     left:50%;
-    transform: translate(-50%,30vh);
+    transform: translate(-50%,15vh);
+    overflow: hidden;
 }
