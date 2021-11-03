@@ -1,0 +1,67 @@
+/* Navigation buttons */
+.navigation-buttons{
+    position:fixed;
+    top:0;
+    right:0;
+    display: table;
+    clear: both;
+    z-index: 99;
+}
+
+.navigation-buttons a{
+    font-size: 20px;
+    font-weight: bold;
+    float:left;
+    background-color: white;
+    border-radius: 50%;
+    padding:20px 27px;
+    margin: 30px;
+}
+
+.navigation-buttons a:link{
+    text-decoration: none;
+}
+
+.navigation-buttons a:hover{
+    box-shadow: -5px 0 5px #555555;
+}
+
+/* Shopping items */
+.item{
+    height:100vh;
+    position: relative;
+}
+
+#first{
+    background-color: red;
+    color: yellow;
+}
+
+#second{
+    background-color: green;
+    color:yellow;
+}
+
+#third{
+    background-color: yellow;
+    color:green;
+}
+
+.item img{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+.item::after{
+    content:"il nostro modello di punta";
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,30vh);
+}
